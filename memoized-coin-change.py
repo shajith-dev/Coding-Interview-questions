@@ -8,7 +8,7 @@ def coin(amt,c,memo=dict()):
         if amt-c[i] in memo.keys():
             return memo[amt-c[i]]
         if c[i]<=amt:
-            m = min(m,coin(amt-c[i],c,memo))  
+            m = min(m,coin(amt-c[i],c[i:],memo))  
         else:
             break
     for i in c:
