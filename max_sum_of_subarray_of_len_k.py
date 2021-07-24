@@ -8,6 +8,6 @@ for r in range(len(a)):
     while(r-l+1>k):
         sum-=a[l]
         l+=1
-    if r-l+1==3:
+    if r-l+1==k:
         m = max(m,sum)
 print(m)
